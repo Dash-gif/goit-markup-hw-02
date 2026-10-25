@@ -1,0 +1,35 @@
+.features .section-title {
+  margin-bottom: 48px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.features-subtitle {
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.features-desc {
+  color: #434455;
+}
+
+@media screen and (max-width: 767px) {
+  .features-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 48px;
+  }
+}
